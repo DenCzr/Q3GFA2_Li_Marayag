@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd page</title>
+</head>
+<body>
+    <button onclick="load1()">See the first Image</button>
+    <button onclick="load2()">See the second Image</button>
+    <img id="img1"  src="img/f1.avif"> 
+    <img  id="img2"  src="img/f2.jpg"> 
+    <script>
+        var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        function load1()
+        {
+            img1.style.display = "block";
+            img2.style.display = "none"; 
+        }
+        function load2()
+        {
+            img1.style.display = "none";
+            img2.style.display = "block";
+        }
+    </script>
+</body>
+</html>
